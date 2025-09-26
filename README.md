@@ -1,8 +1,9 @@
 # Web_dev-repo
 website development
 Teams: 
-RITA, GODSON, CHIDOZIE
+RITA, ESTHER GODSON, CHIDOZIE
 Roles:
 RITA: 
 GODSON:
 CHIDOZIE:
+ESTHER:
