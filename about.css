@@ -9,6 +9,8 @@
 
 body {
     font-family: montserrat, sans-serif;
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 header {
@@ -82,7 +84,7 @@ header {
 main {
     padding: 50px 100px;
     background: url(Assets/Background.png) top no-repeat;
-    background-color: #c8c9c9;
+    background-color: #fdfeff;
     object-fit: cover;
 }
 
@@ -110,12 +112,6 @@ main {
     font-weight: 600;
 }
 
-.content h3 span {
-    text-decoration: underline;
-    text-decoration-color: yellow;
-    text-decoration-thickness: 4px;
-}
-
 .content p {
     font-size: 10px;
     margin: 20px 0;
@@ -137,16 +133,17 @@ main {
 
 .our-values .right-side p {
     font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .our-values .right-side h1 {
     margin-bottom: 20px;
 }
 
-.our-values .right-side h1 span {
-    text-decoration: underline;
-    text-decoration-color: yellow;
-    text-decoration-thickness: 4px;
+.our-values .right-side a {
+    color: black;
+    font-size: 12px;
 }
 
 .our-values .left-side {
@@ -154,15 +151,43 @@ main {
     gap: 10px;
 }
 
+.our-values .left-side .card-text p {
+    margin-bottom: 30px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.our-values .left-side a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
 .our-values .left-side p {
     font-size: 15px;
 }
 
 .partner-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+.partner-grid img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
 
 .partners .text {
@@ -186,12 +211,98 @@ main {
     font-size: 35px;
 }
 
+.partners .text .p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
 span {
     text-decoration: underline;
-    text-decoration-color: yellow;
+    text-decoration-color: #fcd900;
     text-decoration-thickness: 4px;
 }
 
 footer {
     padding: 40px 100px;
+    background: url(/Web_dev-repo/Assets/footer-Background.png) center no-repeat;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer .top {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+footer .top .right-side {
+    display: flex;
+    gap: 20px;
+}
+
+footer .top .right-side div {
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+}
+
+footer .top .right-side div .text {
+    flex-direction: column;
+    gap: 0;
+}
+
+footer .top .right-side div .text h4 {
+    margin-bottom: 10px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.career {
+    display: flex;
+    gap: 20px;
+}
+
+.career p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.career button {
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    background: #fcd900;
+    border-radius: 5px;
+}
+
+.footer-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content li {
+    list-style: none;
+}
+
+.footer-content li a {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.footer-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c8c9c9;
+    padding: 20px 100px;
+    font-size: 12px;
 }
